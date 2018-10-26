@@ -1,0 +1,12 @@
+<div class="container">
+  <h3>state</h3>
+<form [formGroup]="addCustomerForm">
+
+  <div class="form-group">
+ <select formControlName="stateControl" 
+[(ngModel)]='countrySelected'  >
+  <option [value]="state.name" *ngFor="let state of getstate">{{state.name}}</option>
+</select> 
+
+</div>
+</form>
